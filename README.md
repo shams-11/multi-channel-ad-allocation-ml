@@ -21,6 +21,19 @@ creatives, and hours of the day using:
 
 The full technical report follows the ECON 433 template: abstract, problem definition,
 data description, methodology, empirical results, explainability (XAI), and policy implications.
+A formatted copy is also provided as [`REPORT.docx`](REPORT.docx) / `REPORT.pdf`.
+
+### 🧪 Run the methods → [`reproduction/`](reproduction/)
+
+A self-contained, **synthetic-data** harness reproduces every method in the report
+(forecast ensemble, Thompson Sampling bandit, MAD-z anomaly detection, fatigue projection)
+with no production code or data. See [`reproduction/README.md`](reproduction/README.md):
+
+```bash
+pip install -r reproduction/requirements.txt
+python -m reproduction.run_all      # console report + figures
+pytest reproduction/tests -q        # behavioural tests
+```
 
 ---
 

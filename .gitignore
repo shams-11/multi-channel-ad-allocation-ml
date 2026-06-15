@@ -11,6 +11,9 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Generated reproduction artifacts
+reproduction/outputs/
+
 # Never commit raw source documents or any production data exports
 *.docx
 *.pptx
@@ -20,3 +23,6 @@ Thumbs.db
 *.db
 .env
 .env.*
+
+# ...but DO publish the sanitized, formatted report exports
+!REPORT.docx

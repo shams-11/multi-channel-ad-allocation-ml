@@ -340,7 +340,7 @@ The most important economic lesson is that the largest single value came from th
 - **Audit infrastructure:** `ml_anomaly_events` and `ml_budget_suggestions` tables capture every prediction and operator response; precision/recall and ROI computed by a 60-minute cron.
 - **Operator constraint:** every UI mutation handler wrapped in `window.confirm()`; every backend mutation gated by `require_admin` middleware; ML never invokes the Meta API directly (audit-log only).
 
-> The underlying production code and data are part of a private, commercially operated system and are **not** included in this public repository. A synthetic-data reproduction harness — generating data that mimics the schema and reproducing the methods of §4–§6 — can be added on request so that every result is independently runnable without any proprietary data. See [`reproduction/`](reproduction/) (planned).
+> The underlying production code and data are part of a private, commercially operated system and are **not** included in this public repository. Instead, a **synthetic-data reproduction harness** is provided in [`reproduction/`](reproduction/): it generates a dataset that mimics the production schema and reproduces every method of §4–§6 (forecast ensemble, Thompson Sampling bandit, MAD-modified z-score anomaly detection, OLS fatigue projection) so that the behaviour is independently runnable — `python -m reproduction.run_all` — without any proprietary data. Its behavioural claims are covered by tests (`pytest reproduction/tests`).
 
 ## Appendix B — AI Tools Acknowledgment
 

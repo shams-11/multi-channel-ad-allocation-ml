@@ -26,6 +26,13 @@ All three are generated from **synthetic** data and are titled accordingly — t
 illustrate the *shape* of each result (heavy-tailed ROAS, bimodal orders,
 autoregression-dominated importance), not the firm's real figures.
 
+## Sample data
+
+A committed, synthetic dataset (default `seed = 433`) lives in
+[`sample_data/`](sample_data/) — `ad_panel.csv`, `placement_observations.csv`,
+`hourly_orders.csv`. It mimics the production schema (REPORT.md §3.1) so the
+methods run on concrete files, and contains **no real production data**.
+
 ## What it reproduces
 
 | Module | Report section | What it shows |

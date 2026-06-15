@@ -27,3 +27,6 @@ reproduction/outputs/
 # ...but DO publish the sanitized, formatted report + presentation exports
 !REPORT.docx
 !PRESENTATION.pptx
+
+# ...and DO publish the committed synthetic sample dataset
+!reproduction/sample_data/*.csv

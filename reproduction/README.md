@@ -14,7 +14,17 @@ pip install -r requirements.txt
 python -m reproduction.run_all
 ```
 
-It prints a console report and writes figures to `reproduction/outputs/`.
+It prints a console report and writes figures to `reproduction/outputs/`. A
+committed copy of those figures (from a default `seed=433` run) lives in
+[`sample_outputs/`](sample_outputs/) so you can see the result without running anything:
+
+| Synthetic ROAS distribution | Hourly order share | Feature importance |
+|---|---|---|
+| ![roas](sample_outputs/roas_distribution.png) | ![hourly](sample_outputs/hourly_orders.png) | ![importance](sample_outputs/feature_importance.png) |
+
+All three are generated from **synthetic** data and are titled accordingly — they
+illustrate the *shape* of each result (heavy-tailed ROAS, bimodal orders,
+autoregression-dominated importance), not the firm's real figures.
 
 ## What it reproduces
 

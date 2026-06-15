@@ -24,5 +24,6 @@ reproduction/outputs/
 .env
 .env.*
 
-# ...but DO publish the sanitized, formatted report exports
+# ...but DO publish the sanitized, formatted report + presentation exports
 !REPORT.docx
+!PRESENTATION.pptx

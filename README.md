@@ -23,6 +23,11 @@ The full technical report follows the ECON 433 template: abstract, problem defin
 data description, methodology, empirical results, explainability (XAI), and policy implications.
 A formatted copy is also provided as [`REPORT.docx`](REPORT.docx) / `REPORT.pdf`.
 
+### 🖥️ Slides → [`PRESENTATION.pptx`](PRESENTATION.pptx) / `PRESENTATION.pdf`
+
+The 12-slide deck (anonymized, and reconciled with the report's final numbers and
+the deliberate-negative-result framing).
+
 ### 🧪 Run the methods → [`reproduction/`](reproduction/)
 
 A self-contained, **synthetic-data** harness reproduces every method in the report
